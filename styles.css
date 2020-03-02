@@ -1,0 +1,15 @@
+div.profileContainer {
+  background-color: red;
+  text-align: center;
+  padding-top: 20;
+  padding-bottom: 20;
+}
+
+p.profileText {
+  color: white;
+  font-size: 18;
+}
+
+img.profileImage:hover {
+  width: 100%;
+}
