@@ -34,3 +34,20 @@ function slideShowScroll(next) {
       : document.getElementById("currentSlideShowImage").src = images[imgIndex - 1];
   }
 }
+
+function onSetStyle() {
+  let redBackground = document.getElementById("redBackground");
+  let greenBackground = document.getElementById("greenBackground");
+  let blueBackground = document.getElementById("blueBackground");
+  let redBorder = document.getElementById("redBorder");
+  let greenBorder = document.getElementById("greenBorder");
+  let blueBorder = document.getElementById("blueBorder");
+  let borderWidth = document.getElementById("widthInput");
+
+  let textDiv = document.getElementById("manipulateText");
+
+  textDiv.style.backgroundColor = `rgb(${redBackground.value}, ${greenBackground.value}, ${blueBackground.value})`;
+  textDiv.style.borderWidth = `${borderWidth.value}px`;
+  console.log(textDiv.style);
+  textDiv.style.borderColor = `rgb(${redBorder.value}, ${greenBorder.value}, ${blueBorder.value})`;
+}
